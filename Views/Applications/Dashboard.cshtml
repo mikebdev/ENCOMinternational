@@ -1,0 +1,72 @@
+﻿@model IEnumerable<EncomDashboardCore.ViewModels.ApplicationStatusVM>
+
+@{
+    ViewData["Title"] = "Dashboard";
+    //Layout = "~/Views/Shared/_Layout.cshtml";
+    string AppURL = ""; // In case we want website links to be clickable can build in model loop.
+}
+
+<h1>Dashboard</h1>
+
+<p>We will be loading up application statuses here.</p>
+
+
+<p><a asp-controller="Applications" asp-action="Create">Add Application to track</a></p>
+
+
+
+<p>STATUS LIST:</p>
+
+<p>
+    @*<a asp-action="Create">Create New</a>*@
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.AppType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AppName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AppLocation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AppInfo)
+            </th>
+            <th>
+                Application Status
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AppType)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AppName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AppLocation)       
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AppInfo)
+                </td>
+                <td>
+                    @*@Html.Raw(@Html.DisplayFor(modelItem => item.ApplicationStatusResult))*@
+                    @Html.DisplayFor(modelItem => item.ApplicationStatusResult)
+                </td>
+                <td>
+                    @*<a asp-action="Edit" asp-route-id="@item.AppID">Edit</a> |
+                        <a asp-action="Details" asp-route-id="@item.AppID">Details</a> |
+                        <a asp-action="Delete" asp-route-id="@item.AppID">Delete</a>*@
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

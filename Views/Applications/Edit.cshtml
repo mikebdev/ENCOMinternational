@@ -1,0 +1,64 @@
+﻿@model EncomDashboardCore.ViewModels.EditApplicationVM
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layoutdarkster.cshtml";
+}
+
+<h1>Edit</h1>
+
+<p>@ViewBag.AppTypeCount</p>
+
+<h4>Application</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="AppID" />
+            <div class="form-group">
+                <label asp-for="AppType" class="control-label"></label>
+                @*<input asp-for="AppType" class="form-control" />*@
+                <select asp-for="AppType" asp-items="Model.AppTypes"></select>
+                <span asp-validation-for="AppType" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AppName" class="control-label"></label>
+                <input asp-for="AppName" class="form-control" />
+                <span asp-validation-for="AppName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AppLocation" class="control-label"></label>
+                <input asp-for="AppLocation" class="form-control" />
+                <span asp-validation-for="AppLocation" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AppInfo" class="control-label"></label>
+                <input asp-for="AppInfo" class="form-control" />
+                <span asp-validation-for="AppInfo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Status" class="control-label"></label>
+                @*<input asp-for="Status" class="form-control" />*@
+                <select asp-for="Status" asp-items="Model.AppStatuses"></select>
+                <span asp-validation-for="Status" class="text-danger"></span>
+            </div>
+            @*<div class="form-group">
+                <label asp-for="Disabled" class="control-label"></label>
+                <input asp-for="Disabled" class="form-control" />
+                <span asp-validation-for="Disabled" class="text-danger"></span>
+            </div>*@
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

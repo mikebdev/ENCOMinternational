@@ -1,0 +1,66 @@
+﻿@model IEnumerable<EncomDashboardCore.Models.Application>
+
+@{
+    ViewData["Title"] = "Index";
+    //Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Application List</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.AppType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AppName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AppLocation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AppInfo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Status)
+            </th>
+            @*<th>
+                @Html.DisplayNameFor(model => model.Disabled)
+            </th>*@
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.AppType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AppName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AppLocation)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AppInfo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Status)
+            </td>
+            @*<td>
+                @Html.DisplayFor(modelItem => item.Disabled)
+            </td>*@
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.AppID">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.AppID">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.AppID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
