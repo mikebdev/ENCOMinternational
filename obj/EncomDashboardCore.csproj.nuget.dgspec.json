@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "G:\\WWW\\MBDEV\\ENCOM\\EncomDashboardCore\\EncomDashboardCore\\EncomDashboardCore.csproj": {}
+    "G:\\WWW\\MBDEV\\ENCOM\\EncomDashboardCoreGIT\\EncomDashboardCore\\EncomDashboardCore.csproj": {}
   },
   "projects": {
-    "G:\\WWW\\MBDEV\\ENCOM\\EncomDashboardCore\\EncomDashboardCore\\EncomDashboardCore.csproj": {
+    "G:\\WWW\\MBDEV\\ENCOM\\EncomDashboardCoreGIT\\EncomDashboardCore\\EncomDashboardCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\WWW\\MBDEV\\ENCOM\\EncomDashboardCore\\EncomDashboardCore\\EncomDashboardCore.csproj",
+        "projectUniqueName": "G:\\WWW\\MBDEV\\ENCOM\\EncomDashboardCoreGIT\\EncomDashboardCore\\EncomDashboardCore.csproj",
         "projectName": "EncomDashboardCore",
-        "projectPath": "G:\\WWW\\MBDEV\\ENCOM\\EncomDashboardCore\\EncomDashboardCore\\EncomDashboardCore.csproj",
+        "projectPath": "G:\\WWW\\MBDEV\\ENCOM\\EncomDashboardCoreGIT\\EncomDashboardCore\\EncomDashboardCore.csproj",
         "packagesPath": "C:\\Users\\mbelcher\\.nuget\\packages\\",
-        "outputPath": "G:\\WWW\\MBDEV\\ENCOM\\EncomDashboardCore\\EncomDashboardCore\\obj\\",
+        "outputPath": "G:\\WWW\\MBDEV\\ENCOM\\EncomDashboardCoreGIT\\EncomDashboardCore\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",

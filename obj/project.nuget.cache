@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yXPYQlzccVYPlhBzFG71yP6sdXz989AGnnEy2zxmglKbqJmlpfJhQG92XwtEoM7wE0GbQ5K4S0S0klJ1z/2gqw==",
+  "dgSpecHash": "Y9T8MOBMkANKeb6+LOA5eShby/qCE4Gq1m6JzYeIuFzN2pvNMqT7ORtpH4x9c+isgqxZcm5L16Ka0Fjr91wYng==",
   "success": true,
-  "projectFilePath": "G:\\WWW\\MBDEV\\ENCOM\\EncomDashboardCore\\EncomDashboardCore\\EncomDashboardCore.csproj",
+  "projectFilePath": "G:\\WWW\\MBDEV\\ENCOM\\EncomDashboardCoreGIT\\EncomDashboardCore\\EncomDashboardCore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mbelcher\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\mbelcher\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.2.0\\microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",
