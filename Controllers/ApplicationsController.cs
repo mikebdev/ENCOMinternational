@@ -33,6 +33,7 @@ namespace EncomDashboardCore.Controllers
         // Need to check website status here and display working or down
         public async Task<IActionResult> Dashboard()
         {
+            ViewBag.Result = "";
             List<ApplicationStatusVM> ApplicationResultsList = new List<ApplicationStatusVM>();
             var ApplicationCount = _context.Applications.Count();
             //var ApplicationSort = _context.Applications.Include(d => d.AppID); //returns IQueryable
@@ -53,6 +54,7 @@ namespace EncomDashboardCore.Controllers
                 Item.ApplicationStatusResult = AppResult;
                 ApplicationResultsList.Add(Item);
             }
+            ViewBag.ApplicationCount = ApplicationCount;
             return View("Dashboard", ApplicationResultsList.ToList()); // should be returning? return View(ApplicationStatusVM);
             //return View("Dashboard", ApplicationResultsList.ToList()); // should be returning? return View(ApplicationStatusVM);
             //return View("Dashboard", ApplicationResultsList.ToList());
@@ -61,27 +63,34 @@ namespace EncomDashboardCore.Controllers
 
         public string GetAppStatus(string app)
         {
-            var result = "result";
+            string result = "0";
             int StatusCode = 12345;
+            //ViewBag.Result = "";
 
             try
             {
                 HttpClient client = new HttpClient();
                 var appTest = client.GetAsync(app);
                 StatusCode = (int)appTest.Result.StatusCode;
+                result = StatusCode.ToString();
             }
             catch (Exception e)
             {
-                result = e.ToString();
+                result = "ERROR:  " + app + " - " + e.ToString();
             }
-            result = StatusCode.ToString();
+            //result = StatusCode.ToString();
+            
 
-            //if (result == "") {
-
-            //}
-            //else if (result == "Unknown") {
-            //    result = "<b>" + result + "<b>";
-            //}
+            if (result == "12345") {
+                ViewBag.Result = "<font color='red'><b>" + "DOWN" + "<b></font>";
+            }
+            else if (result == "200")
+            {
+                ViewBag.Result = "<font color='green'><b>" + "ONLINE" + "<b></font>";
+            } else
+            {
+                ViewBag.Result = "<font color='blue'>" + result + "</font>";
+            }
 
             return result;
         }

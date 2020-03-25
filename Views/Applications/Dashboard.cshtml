@@ -20,6 +20,10 @@
 <p>
     @*<a asp-action="Create">Create New</a>*@
 </p>
+
+
+<p>Application Count: @ViewBag.ApplicationCount</p>
+
 <table class="table">
     <thead>
         <tr>
@@ -59,7 +63,7 @@
                 </td>
                 <td>
                     @*@Html.Raw(@Html.DisplayFor(modelItem => item.ApplicationStatusResult))*@
-                    @Html.DisplayFor(modelItem => item.ApplicationStatusResult)
+                     @Html.DisplayFor(modelItem => item.ApplicationStatusResult)   |   @Html.Raw("" + @ViewBag.Result + "")
                 </td>
                 <td>
                     @*<a asp-action="Edit" asp-route-id="@item.AppID">Edit</a> |
