@@ -303,7 +303,6 @@ G:\WWW\MBDEV\ENCOM\EncomDashboardCoreGIT\EncomDashboardCore\bin\Debug\netcoreapp
 G:\WWW\MBDEV\ENCOM\EncomDashboardCoreGIT\EncomDashboardCore\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 G:\WWW\MBDEV\ENCOM\EncomDashboardCoreGIT\EncomDashboardCore\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 G:\WWW\MBDEV\ENCOM\EncomDashboardCoreGIT\EncomDashboardCore\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-G:\WWW\MBDEV\ENCOM\EncomDashboardCoreGIT\EncomDashboardCore\obj\Debug\netcoreapp3.1\EncomDashboardCore.csprojAssemblyReference.cache
 G:\WWW\MBDEV\ENCOM\EncomDashboardCoreGIT\EncomDashboardCore\obj\Debug\netcoreapp3.1\EncomDashboardCore.csproj.CoreCompileInputs.cache
 G:\WWW\MBDEV\ENCOM\EncomDashboardCoreGIT\EncomDashboardCore\obj\Debug\netcoreapp3.1\EncomDashboardCore.MvcApplicationPartsAssemblyInfo.cache
 G:\WWW\MBDEV\ENCOM\EncomDashboardCoreGIT\EncomDashboardCore\obj\Debug\netcoreapp3.1\EncomDashboardCore.RazorAssemblyInfo.cache
@@ -339,3 +338,4 @@ G:\WWW\MBDEV\ENCOM\EncomDashboardCoreGIT\EncomDashboardCore\obj\Debug\netcoreapp
 G:\WWW\MBDEV\ENCOM\EncomDashboardCoreGIT\EncomDashboardCore\obj\Debug\netcoreapp3.1\EncomDashboardCore.dll
 G:\WWW\MBDEV\ENCOM\EncomDashboardCoreGIT\EncomDashboardCore\obj\Debug\netcoreapp3.1\EncomDashboardCore.pdb
 G:\WWW\MBDEV\ENCOM\EncomDashboardCoreGIT\EncomDashboardCore\obj\Debug\netcoreapp3.1\EncomDashboardCore.genruntimeconfig.cache
+G:\WWW\MBDEV\ENCOM\EncomDashboardCoreGIT\EncomDashboardCore\obj\Debug\netcoreapp3.1\EncomDashboardCore.csprojAssemblyReference.cache

@@ -63,7 +63,7 @@
                 </td>
                 <td>
                     @*@Html.Raw(@Html.DisplayFor(modelItem => item.ApplicationStatusResult))*@
-                     @Html.DisplayFor(modelItem => item.ApplicationStatusResult)   |   @Html.Raw("" + @ViewBag.Result + "")
+                    item.ApplicationStatusResult: @Html.DisplayFor(modelItem => item.ApplicationStatusResult)   |   @Html.Raw("ViewBag.Result: " + @ViewBag.Result + "")
                 </td>
                 <td>
                     @*<a asp-action="Edit" asp-route-id="@item.AppID">Edit</a> |

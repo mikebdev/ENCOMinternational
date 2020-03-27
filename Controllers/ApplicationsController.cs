@@ -30,11 +30,10 @@ namespace EncomDashboardCore.Controllers
 
 
         // GET: Applications Status
-        // Need to check website status here and display working or down
         public async Task<IActionResult> Dashboard()
         {
             ViewBag.Result = "";
-            List<ApplicationStatusVM> ApplicationResultsList = new List<ApplicationStatusVM>();
+            List<ApplicationStatusVM> DashboardVMList = new List<ApplicationStatusVM>();
             var ApplicationCount = _context.Applications.Count();
             //var ApplicationSort = _context.Applications.Include(d => d.AppID); //returns IQueryable
             //ApplicationSort = ApplicationSort.OrderBy(r => r.AppName);
@@ -52,11 +51,11 @@ namespace EncomDashboardCore.Controllers
                 Item.Status = m.Status;
                 AppResult = GetAppStatus(m.AppLocation); 
                 Item.ApplicationStatusResult = AppResult;
-                ApplicationResultsList.Add(Item);
+                DashboardVMList.Add(Item);
             }
+    
             ViewBag.ApplicationCount = ApplicationCount;
-            return View("Dashboard", ApplicationResultsList.ToList()); // should be returning? return View(ApplicationStatusVM);
-            //return View("Dashboard", ApplicationResultsList.ToList()); // should be returning? return View(ApplicationStatusVM);
+            return View("Dashboard", DashboardVMList.ToList()); 
             //return View("Dashboard", ApplicationResultsList.ToList());
             //return View(await _context.Applications.ToListAsync());
         }
@@ -76,20 +75,20 @@ namespace EncomDashboardCore.Controllers
             }
             catch (Exception e)
             {
-                result = "ERROR:  " + app + " - " + e.ToString();
+                result = "<font color='red'>ERROR: </font> " + app + " - " + e.ToString();
             }
             //result = StatusCode.ToString();
             
 
             if (result == "12345") {
-                ViewBag.Result = "<font color='red'><b>" + "DOWN" + "<b></font>";
+                ViewBag.Result = "<font color='red'><b>" + app + " | " + "DOWN" + "<b></font>";
             }
             else if (result == "200")
             {
-                ViewBag.Result = "<font color='green'><b>" + "ONLINE" + "<b></font>";
+                ViewBag.Result = "<font color='green'><b>" + app + " | " + "ONLINE" + "<b></font>";
             } else
             {
-                ViewBag.Result = "<font color='blue'>" + result + "</font>";
+                ViewBag.Result = "<font color='blue'>" +  app + " | " + "UNKNOWN" + result + "</font>";
             }
 
             return result;
