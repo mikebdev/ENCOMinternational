@@ -339,3 +339,4 @@ G:\WWW\MBDEV\ENCOM\EncomDashboardCoreGIT\EncomDashboardCore\obj\Debug\netcoreapp
 G:\WWW\MBDEV\ENCOM\EncomDashboardCoreGIT\EncomDashboardCore\obj\Debug\netcoreapp3.1\EncomDashboardCore.pdb
 G:\WWW\MBDEV\ENCOM\EncomDashboardCoreGIT\EncomDashboardCore\obj\Debug\netcoreapp3.1\EncomDashboardCore.genruntimeconfig.cache
 G:\WWW\MBDEV\ENCOM\EncomDashboardCoreGIT\EncomDashboardCore\obj\Debug\netcoreapp3.1\EncomDashboardCore.csprojAssemblyReference.cache
+G:\WWW\MBDEV\ENCOM\EncomDashboardCoreGIT\EncomDashboardCore\bin\Debug\netcoreapp3.1\System.Text.Json.dll

@@ -35,11 +35,7 @@ namespace EncomDashboardCore.Controllers
             ViewBag.Result = "";
             List<ApplicationStatusVM> DashboardVMList = new List<ApplicationStatusVM>();
             var ApplicationCount = _context.Applications.Count();
-            //var ApplicationSort = _context.Applications.Include(d => d.AppID); //returns IQueryable
-            //ApplicationSort = ApplicationSort.OrderBy(r => r.AppName);
-            //ApplicationIndexViewModel Item = new ApplicationIndexViewModel();
-            //for (int m = 0; m < ApplicationCount; m++)
-            string AppResult = "";
+            string AppStatus = "";
             foreach (var m in _context.Applications.Take(50).ToList())
             {
                 ApplicationStatusVM Item = new ApplicationStatusVM();
@@ -49,13 +45,15 @@ namespace EncomDashboardCore.Controllers
                 Item.AppLocation = m.AppLocation;
                 Item.AppInfo = m.AppInfo;
                 Item.Status = m.Status;
-                AppResult = GetAppStatus(m.AppLocation); 
-                Item.ApplicationStatusResult = AppResult;
+                AppStatus = GetAppStatus(m.AppLocation); 
+                Item.ApplicationStatusResult = AppStatus;
                 DashboardVMList.Add(Item);
             }
-    
+
             ViewBag.ApplicationCount = ApplicationCount;
-            return View("Dashboard", DashboardVMList.ToList()); 
+            ViewBag.Result = "";
+            return View("Dashboard", DashboardVMList.ToList());
+            //return View(await DashboardVMList.ToList());
             //return View("Dashboard", ApplicationResultsList.ToList());
             //return View(await _context.Applications.ToListAsync());
         }
@@ -64,6 +62,7 @@ namespace EncomDashboardCore.Controllers
         {
             string result = "0";
             int StatusCode = 12345;
+            string errorMessage = "";
             //ViewBag.Result = "";
 
             try
@@ -75,22 +74,23 @@ namespace EncomDashboardCore.Controllers
             }
             catch (Exception e)
             {
-                result = "<font color='red'>ERROR: </font> " + app + " - " + e.ToString();
+                errorMessage = "<font color='red'><b>" + app + "</b></font>  | " + e.ToString() + "<br><br>";
+                StatusCode = 12345;
             }
             //result = StatusCode.ToString();
             
 
-            if (result == "12345") {
-                ViewBag.Result = "<font color='red'><b>" + app + " | " + "DOWN" + "<b></font>";
+            if (StatusCode == 12345) {
+                result = "<font color='red'><b>StatusCode: </b>" + StatusCode + " |  <a target='_blank' href='" + app + "'>" + app + "</a> | " + "DOWN" + "</font>";
             }
-            else if (result == "200")
+            else if (StatusCode == 200)
             {
-                ViewBag.Result = "<font color='green'><b>" + app + " | " + "ONLINE" + "<b></font>";
+                result = "<font color='green'><b>StatusCode: </b>" + StatusCode + " | <a target='_blank' href='" + app + "'>" + app + "</a> | " + "ONLINE" + "</font>";
             } else
             {
-                ViewBag.Result = "<font color='blue'>" +  app + " | " + "UNKNOWN" + result + "</font>";
+                result = "<font color='blue'>StatusCode: </b>" + StatusCode + " |  <a target='_blank' href='" + app + "'>" + app + "</a> | " + "UNKNOWN" + "</font>";
             }
-
+            ViewBag.ErrorMessages += errorMessage;
             return result;
         }
 

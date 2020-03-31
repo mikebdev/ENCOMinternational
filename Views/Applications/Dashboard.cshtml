@@ -3,7 +3,8 @@
 @{
     ViewData["Title"] = "Dashboard";
     //Layout = "~/Views/Shared/_Layout.cshtml";
-    string AppURL = ""; // In case we want website links to be clickable can build in model loop.
+    string applicationStatusResult = ""; // In case we want website links to be clickable can build in model loop.
+    string applicationErrorMessages = "";
 }
 
 <h1>Dashboard</h1>
@@ -56,14 +57,16 @@
                     @Html.DisplayFor(modelItem => item.AppName)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.AppLocation)       
+                    @Html.DisplayFor(modelItem => item.AppLocation)
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.AppInfo)
                 </td>
                 <td>
-                    @*@Html.Raw(@Html.DisplayFor(modelItem => item.ApplicationStatusResult))*@
-                    item.ApplicationStatusResult: @Html.DisplayFor(modelItem => item.ApplicationStatusResult)   |   @Html.Raw("ViewBag.Result: " + @ViewBag.Result + "")
+                    @{
+                        applicationStatusResult = item.ApplicationStatusResult.ToString();
+                        @Html.Raw(applicationStatusResult);
+                    }
                 </td>
                 <td>
                     @*<a asp-action="Edit" asp-route-id="@item.AppID">Edit</a> |
@@ -74,3 +77,14 @@
         }
     </tbody>
 </table>
+
+
+
+<br />
+<br />
+<b>ERROR MESSAGES:</b>
+<br />
+@{
+    applicationErrorMessages = ViewBag.ErrorMessages;
+    @Html.Raw(applicationErrorMessages);
+}
