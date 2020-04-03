@@ -13,14 +13,14 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
 #nullable restore
-#line 1 "G:\WWW\MBDEV\ENCOM\EncomDashboardCoreGIT\EncomDashboardCore\Views\_ViewImports.cshtml"
+#line 1 "C:\Code\DNC\ENCOMinternational\Views\_ViewImports.cshtml"
 using EncomDashboardCore;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "G:\WWW\MBDEV\ENCOM\EncomDashboardCoreGIT\EncomDashboardCore\Views\_ViewImports.cshtml"
+#line 2 "C:\Code\DNC\ENCOMinternational\Views\_ViewImports.cshtml"
 using EncomDashboardCore.Models;
 
 #line default
@@ -57,7 +57,7 @@ using EncomDashboardCore.Models;
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
 #nullable restore
-#line 1 "G:\WWW\MBDEV\ENCOM\EncomDashboardCoreGIT\EncomDashboardCore\Views\Home\Index.cshtml"
+#line 1 "C:\Code\DNC\ENCOMinternational\Views\Home\Index.cshtml"
   
     ViewData["Title"] = "Home Page";
     Layout = "~/Views/Shared/_LayoutdarksterStart.cshtml";

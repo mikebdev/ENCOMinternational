@@ -13,14 +13,14 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
 #nullable restore
-#line 1 "G:\WWW\MBDEV\ENCOM\EncomDashboardCoreGIT\EncomDashboardCore\Views\_ViewImports.cshtml"
+#line 1 "C:\Code\DNC\ENCOMinternational\Views\_ViewImports.cshtml"
 using EncomDashboardCore;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "G:\WWW\MBDEV\ENCOM\EncomDashboardCoreGIT\EncomDashboardCore\Views\_ViewImports.cshtml"
+#line 2 "C:\Code\DNC\ENCOMinternational\Views\_ViewImports.cshtml"
 using EncomDashboardCore.Models;
 
 #line default
@@ -66,7 +66,7 @@ using EncomDashboardCore.Models;
             __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "37199581299f870a1a1e2ab110c0e73e675816c65651", async() => {
                 WriteLiteral("\r\n    <meta charset=\"utf-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>");
 #nullable restore
-#line 6 "G:\WWW\MBDEV\ENCOM\EncomDashboardCoreGIT\EncomDashboardCore\Views\Shared\_LayoutdarksterStart.cshtml"
+#line 6 "C:\Code\DNC\ENCOMinternational\Views\Shared\_LayoutdarksterStart.cshtml"
       Write(ViewData["Title"]);
 
 #line default

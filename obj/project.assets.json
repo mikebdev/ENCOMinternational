@@ -9056,11 +9056,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\WWW\\MBDEV\\ENCOM\\EncomDashboardCoreGIT\\EncomDashboardCore\\EncomDashboardCore.csproj",
+      "projectUniqueName": "\\\\Computerpro4\\cp4-gaming\\WWW\\MBDEV\\ENCOM\\EncomDashboardCoreGIT\\EncomDashboardCore\\EncomDashboardCore.csproj",
       "projectName": "EncomDashboardCore",
-      "projectPath": "G:\\WWW\\MBDEV\\ENCOM\\EncomDashboardCoreGIT\\EncomDashboardCore\\EncomDashboardCore.csproj",
+      "projectPath": "\\\\Computerpro4\\cp4-gaming\\WWW\\MBDEV\\ENCOM\\EncomDashboardCoreGIT\\EncomDashboardCore\\EncomDashboardCore.csproj",
       "packagesPath": "C:\\Users\\mbelcher\\.nuget\\packages\\",
-      "outputPath": "G:\\WWW\\MBDEV\\ENCOM\\EncomDashboardCoreGIT\\EncomDashboardCore\\obj\\",
+      "outputPath": "\\\\Computerpro4\\cp4-gaming\\WWW\\MBDEV\\ENCOM\\EncomDashboardCoreGIT\\EncomDashboardCore\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
