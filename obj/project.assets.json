@@ -9049,25 +9049,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mbelcher\\.nuget\\packages\\": {},
+    "C:\\Users\\que\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\WWW\\MBDEV\\ENCOM\\EncomDashboardCoreGIT\\EncomDashboardCore\\EncomDashboardCore.csproj",
+      "projectUniqueName": "C:\\Code\\DNC\\ENCOMinternational\\EncomDashboardCore.csproj",
       "projectName": "EncomDashboardCore",
-      "projectPath": "G:\\WWW\\MBDEV\\ENCOM\\EncomDashboardCoreGIT\\EncomDashboardCore\\EncomDashboardCore.csproj",
-      "packagesPath": "C:\\Users\\mbelcher\\.nuget\\packages\\",
-      "outputPath": "G:\\WWW\\MBDEV\\ENCOM\\EncomDashboardCoreGIT\\EncomDashboardCore\\obj\\",
+      "projectPath": "C:\\Code\\DNC\\ENCOMinternational\\EncomDashboardCore.csproj",
+      "packagesPath": "C:\\Users\\que\\.nuget\\packages\\",
+      "outputPath": "C:\\Code\\DNC\\ENCOMinternational\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\mbelcher\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\que\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -9133,7 +9133,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.102\\RuntimeIdentifierGraph.json"
       }
     }
   }
