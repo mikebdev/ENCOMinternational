@@ -1,5 +1,5 @@
 {
-  "FilePath": "g:\\WWW\\MBDEV\\ENCOM\\EncomDashboardCoreGIT\\EncomDashboardCore\\EncomDashboardCore.csproj",
+  "FilePath": "\\\\Computerpro4\\cp4-gaming\\WWW\\MBDEV\\ENCOM\\EncomDashboardCoreGIT\\EncomDashboardCore\\EncomDashboardCore.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "3.0",
@@ -20519,92 +20519,6 @@
     "CSharpLanguageVersion": 800
   },
   "RootNamespace": "EncomDashboardCore",
-  "Documents": [
-    {
-      "FilePath": "g:\\WWW\\MBDEV\\ENCOM\\EncomDashboardCoreGIT\\EncomDashboardCore\\Views\\Shared\\_LayoutdarksterStart.cshtml",
-      "TargetPath": "Views\\Shared\\_LayoutdarksterStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "g:\\WWW\\MBDEV\\ENCOM\\EncomDashboardCoreGIT\\EncomDashboardCore\\Views\\Home\\Privacy.cshtml",
-      "TargetPath": "Views\\Home\\Privacy.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "g:\\WWW\\MBDEV\\ENCOM\\EncomDashboardCoreGIT\\EncomDashboardCore\\Views\\Applications\\Index.cshtml",
-      "TargetPath": "Views\\Applications\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "g:\\WWW\\MBDEV\\ENCOM\\EncomDashboardCoreGIT\\EncomDashboardCore\\Views\\Applications\\Dashboard.cshtml",
-      "TargetPath": "Views\\Applications\\Dashboard.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "g:\\WWW\\MBDEV\\ENCOM\\EncomDashboardCoreGIT\\EncomDashboardCore\\Views\\Home\\Dashboard.cshtml",
-      "TargetPath": "Views\\Home\\Dashboard.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "g:\\WWW\\MBDEV\\ENCOM\\EncomDashboardCoreGIT\\EncomDashboardCore\\Views\\Applications\\Create.cshtml",
-      "TargetPath": "Views\\Applications\\Create.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "g:\\WWW\\MBDEV\\ENCOM\\EncomDashboardCoreGIT\\EncomDashboardCore\\Views\\Shared\\_Layoutdarkster.cshtml",
-      "TargetPath": "Views\\Shared\\_Layoutdarkster.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "g:\\WWW\\MBDEV\\ENCOM\\EncomDashboardCoreGIT\\EncomDashboardCore\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "g:\\WWW\\MBDEV\\ENCOM\\EncomDashboardCoreGIT\\EncomDashboardCore\\Views\\Home\\Index.cshtml",
-      "TargetPath": "Views\\Home\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "g:\\WWW\\MBDEV\\ENCOM\\EncomDashboardCoreGIT\\EncomDashboardCore\\Views\\_ViewStart.cshtml",
-      "TargetPath": "Views\\_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "g:\\WWW\\MBDEV\\ENCOM\\EncomDashboardCoreGIT\\EncomDashboardCore\\Views\\Applications\\Delete.cshtml",
-      "TargetPath": "Views\\Applications\\Delete.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "g:\\WWW\\MBDEV\\ENCOM\\EncomDashboardCoreGIT\\EncomDashboardCore\\Views\\Applications\\Edit.cshtml",
-      "TargetPath": "Views\\Applications\\Edit.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "g:\\WWW\\MBDEV\\ENCOM\\EncomDashboardCoreGIT\\EncomDashboardCore\\Views\\Shared\\Error.cshtml",
-      "TargetPath": "Views\\Shared\\Error.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "g:\\WWW\\MBDEV\\ENCOM\\EncomDashboardCoreGIT\\EncomDashboardCore\\Views\\Shared\\_LayoutModerna.cshtml",
-      "TargetPath": "Views\\Shared\\_LayoutModerna.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "g:\\WWW\\MBDEV\\ENCOM\\EncomDashboardCoreGIT\\EncomDashboardCore\\Views\\Shared\\_Layout.cshtml",
-      "TargetPath": "Views\\Shared\\_Layout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "g:\\WWW\\MBDEV\\ENCOM\\EncomDashboardCoreGIT\\EncomDashboardCore\\Views\\_ViewImports.cshtml",
-      "TargetPath": "Views\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "g:\\WWW\\MBDEV\\ENCOM\\EncomDashboardCoreGIT\\EncomDashboardCore\\Views\\Applications\\Details.cshtml",
-      "TargetPath": "Views\\Applications\\Details.cshtml",
-      "FileKind": "mvc"
-    }
-  ],
+  "Documents": [],
   "SerializationFormat": "0.2"
 }
