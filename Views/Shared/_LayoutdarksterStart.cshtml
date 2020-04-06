@@ -6,12 +6,7 @@
     <title>@ViewData["Title"] - Encom Dashboard</title>
     <meta name="description" content="" />
     <meta name="generator" content="Themestr.app">
-    @*<link rel="icon" href="http://themes.guide/favicon.ico" type="image/x-icon" />*@
-    @*<link rel="shortcut icon" href="http://themes.guide/favicon.ico" type="image/x-icon" />*@
-    @*<meta property="og:image" name="twitter:image" content="http://bootstrap.themes.guide/assets/ss_darkster.png">*@
     <meta name="twitter:card" content="summary_large_image">
-    @*<meta name="twitter:site" content="@ThemesGuide">
-        <meta name="twitter:creator" content="@ThemesGuide">*@
     <meta name="twitter:title" content="">
     <meta name="twitter:description" content="">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
@@ -28,59 +23,39 @@
                 <div class="col-12">
                     <div class="text-center m-0 vh-100 d-flex flex-column justify-content-center text-light">
                         <h1 class="display-4">Welcome to ENCOM International</h1>
-                        @*<p class="lead"> _LayoutdarksterStart.cshtml</p>*@
                         <div class="row">
-                            @*<div class="col-lg-4 col-sm-6 mx-auto">
-                                    <div class="input-group mb-3">
-                                        <input type="text" class="form-control form-control-lg" placeholder="your@email">
-                                        <div class="input-group-append">
-                                            <button class="btn btn-outline-light btn-lg rounded-right" type="button">Sign-up</button>
-                                        </div>
-                                    </div>
-                                </div>*@
                         </div>
-                        @*<div class="mt-2 mx-auto">
-                                <div class="btn-group">
-                                    <a href="theme.css" class="btn btn-outline-light btn-lg">
-                                        Download Theme
-                                    </a>
-                                    <button type="button" class="btn btn-lg btn-outline-light dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <span class="sr-only"></span>
-                                    </button>
-                                    <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="theme.css">theme.css</a>
-                                        <a class="dropdown-item" href="theme.min.css">theme.min.css</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="theme.scss">theme.scss</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" target="new" href=""></a>
-                                    </div>
-                                </div>
-                            </div>*@
                     </div>
                 </div>
             </div>
         </div>
     </header>
 
-
-
-   
-
+    @*Top menu here*@
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary" id="navbar1">
+        <div class="container">
+            <a class="navbar-brand mr-1 mb-1 mt-0" href="../">ENCOM International</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse justify-content-center" id="collapsingNavbar">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Applications" asp-action="Dashboard">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+    </nav>
 
     <main>
-
-
         <section class="container">
             @RenderBody()
         </section>
-
-
     </main>
-
-
-
-
 
     <footer id="footer" class="bg-dark text-light py-5">
     </footer>
@@ -93,13 +68,6 @@
     @RenderSection("Scripts", required: false)
 </body>
 </html>
-
-
-
-
-
-
-
 
 @*<footer class="border-top footer text-muted">
     <div class="container">

@@ -509,3 +509,4 @@ C:\Code\DNC\ENCOMinternational\obj\Debug\netcoreapp3.1\staticwebassets\EncomDash
 C:\Code\DNC\ENCOMinternational\obj\Debug\netcoreapp3.1\staticwebassets\EncomDashboardCore.StaticWebAssets.xml
 C:\Code\DNC\ENCOMinternational\obj\Debug\netcoreapp3.1\EncomDashboardCore.dll
 C:\Code\DNC\ENCOMinternational\obj\Debug\netcoreapp3.1\EncomDashboardCore.pdb
+G:\WWW\MBDEV\ENCOM\EncomDashboardCoreGIT\EncomDashboardCore\obj\Debug\netcoreapp3.1\EncomDashboardCore.csprojAssemblyReference.cache
